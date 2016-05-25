@@ -1,3 +1,5 @@
 import pytest
+import requests
 def test_1():
-	print "test hello"
+	r = requests.get('http://www.example.com')
+	print r.text
